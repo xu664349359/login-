@@ -1,0 +1,239 @@
+/* reset css */
+body{
+	margin: 0;
+}
+
+/* wrap */
+.wrap{
+	margin: 0 auto;
+	width: 750px;
+	height: 1334px;
+	background: url(../img/bg.png) no-repeat;
+	padding-top: 206px;
+	box-sizing: border-box;
+}
+.boy{
+	width: 429px;
+	height: 429px;
+	border-radius: 50%;
+	margin-left: 160px;
+	background: url(../img/face-body.png) no-repeat 68px 41px;
+	padding-top: 165px;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: 47px;
+}
+.boy-main{
+	position: relative;
+	width: 292px;
+	height: 263px;
+	margin-left:69px;
+	transition: .3s;
+}
+.eyebrow{
+	position: absolute;
+	left: 91px;
+	top: 0;
+	width: 111px;
+	height: 11px;
+}
+.eyebrow .eyebrow-left, .eyebrow .eyebrow-right{
+	position: absolute;
+	top: 0;
+	width: 39px;
+	height: 11px;
+	background: url(../img/eyebrow.png) no-repeat left top;
+	transition: .3s transform;
+}
+.eyebrow .eyebrow-left{
+	left: 0;
+	background-position: left top;
+}
+.eyebrow .eyebrow-right{
+	right: 0;
+	background-position: right top;
+}
+.eyes{
+	position: absolute;
+	left: 103px;
+	top: 17px;
+	width: 85px;
+	height: 20px;
+}
+.eyes .eye {
+	position: absolute;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #414143;
+	border-radius: 50%;
+	transition: .3s;
+}
+.eyes .eyeball{
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	content: "";
+	width: 6px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: .3s;
+	opacity: 1;
+}
+.eyes .eyes-left{
+	left: 0;
+}
+.eyes .eyes-right{
+	right: 0;
+}
+
+.nose{
+	position: absolute;
+	left: 133px;
+	top: 51px;
+	width: 24px;
+	height: 11px;
+	background: url(../img/nose.png) no-repeat;
+}
+.mouth{
+	position: absolute;
+	left: 126px;
+	top: 84px;
+	width: 36px;
+	height: 2px;
+	background-color: #e19d88;
+	border: 1px solid #f5c2aa;
+	transition: .3s;
+}
+.book{
+	position: absolute;
+	left: 0;
+	top: 179px;
+	width: 296px;
+	height: 223px;
+	background: url(../img/book.png) no-repeat;
+	transition: .3s;
+}
+.input-wrap{
+	width: 550px;
+	position: relative;
+	margin: 0 0 61px 100px;
+}
+.ico-email{
+	position: absolute;
+	left: 35px;
+	top: 32px;
+	width: 38px;
+	height: 40px;
+	background: url(../img/ico-login.png) no-repeat 0 0;
+}
+.ico-password{
+	position: absolute;
+	left: 35px;
+	top: 32px;
+	width: 38px;
+	height: 40px;
+	background: url(../img/ico-login.png) no-repeat 0 -40px;
+}
+.input-wrap input{
+	width: 550px;
+	height: 98px;
+	border: none;
+	background-color: #fff;
+	border-radius: 6px;
+	padding-left: 86px;
+	box-sizing: border-box;
+	font-size: 28px;
+	color: #000;
+	outline: none;
+}
+.submit{
+	width: 150px;
+	height: 50px;
+	background-color: pink;
+	text-align: center;
+	line-height: 50px;
+	margin-left: 100px;
+	cursor: pointer;
+}
+.lock, .look{
+	cursor: pointer;
+	position: absolute;
+	right: 31px;
+	top: 40px;
+	width: 36px;
+	height: 23px;
+	background: url(../img/ico-lock.png) no-repeat;
+}
+.look{
+	background-position: 0 -23px;
+}
+/* input */
+.input .eyebrow-left{
+	transform: rotate(10deg);
+}
+.input .eyebrow-right{
+	transform: rotate(-10deg);
+}
+.input .eyes .eyeball{
+	transform-origin: center 6px;
+	transform: rotate(-125deg);
+}
+.input .mouth{
+	width: 21px;
+	height: 25px;
+	border-radius: 50%;
+	left: 134px;
+}
+
+/* password */
+.password .eyes .eyeball{
+	opacity: 0;
+}
+.password .eyes .eye{
+	height: 6px;
+}
+.password .book{
+	top: 18px;
+}
+/*error*/
+.error .eyebrow .eyebrow-left{
+	transform: rotate(-10deg);
+}
+.error .eyebrow .eyebrow-right{
+	transform: rotate(10deg);
+}
+.error .mouth{
+	position: relative;
+	border: 2px solid #e19d88;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #fccfb5;
+	top: 81px;
+}
+.error .mouth .mouth-mask{
+	position: absolute;
+	left: -2px;
+    bottom: -2px;
+    width: 40px;
+    height: 20px;
+	background-color: #fccfb5;
+}
+/* ok */
+.ok .mouth{
+	position: relative;
+	border: 2px solid #e19d88;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #fccfb5;
+	top: 66px;
+}
+.ok .mouth .mouth-mask {
+    position: absolute;
+    left: -2px;
+    bottom: 17px;
+    width: 40px;
+    height: 20px;
+    background-color: #fccfb5;
+}
